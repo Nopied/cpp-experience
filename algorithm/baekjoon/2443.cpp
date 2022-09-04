@@ -16,6 +16,7 @@ int main()
             if (strIndex < loop)
                 str += " ";
             else if (maxStrLen - (loop + 1) < strIndex)
+            // 문자열 뒤의 공백을 넣으면 "출력 형식이 잘못되었습니다." 오답 처리됨 
                 continue;
             else
                 str += "*";
